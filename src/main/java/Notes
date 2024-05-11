@@ -1,0 +1,22 @@
+Unit testing support in Spring boot
+
+@SpringBootTest
+
+Loads application context
+Support for Spring dependency injection
+You can access data from springapplication.properties
+
+->When we add Spring-boot-starter-test in pom.xml,automaticially Junit dependency comes with it.
+
+
+Write below in terminal,willlist all dependency
+mvn dependency:tree
+
+
+->com.luv2code.component, is in Java and if we dont use same structure in Test it will throw error while running test, we will require to explicitly define @SpringBootTest(classes = MvcTestingExampleApplication.class)
+
+for below package add @SpringBootTest(classes = MvcTestingExampleApplication.class)
+com.luv2code.test
+
+or else if same directory package
+@SpringBootTest
